@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    height: 110%;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7faff;
+}
+html{
+    height: 110%;
+}
+.lado-direito ul, .lado-esquerdo ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.lado-direito{
+    margin-right: auto;
+    margin-left: 2%;
+}
+.lado-direito img{
+    width: 32px;
+    height: 33px;
+}
+.lado-esquerdo{
+    margin-left: auto;
+    margin-right: 5%;
+}
+.lado-esquerdo li, .lado-direito li{
+    margin: 5px;
+}
+.cabecalho{
+    width: 100%;
+    height: 13%;
+    margin: 0;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+.icone-usuario{
+    width: 43px;
+    height: 43px;
+    background-color: #2E2D42;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+/*######SUB CABEÇALHO AQUI#######*/
+
+.sub-cabecalho{
+    margin: 0%;
+    list-style: none;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+}
+.li-sub-cabecalho{
+    margin: 5px;
+    width: 116px;
+    height: 39px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.li-sub-cabecalho:hover{
+    background-color: #434254;
+}
+.li{
+    width: 162px !important;
+    height: 39px !important;
+}
+
+/*######ELEMENTOS DA PAGINA#######*/
+
+#corpo-cadastro{
+    display: flex;
+}
+
+#corpo-produto, #corpo-relatorio{
+    display: none;
+}
+
+#corpo-usuario{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 85%;
+    bottom: 70%;
+    background-color: white;
+    display: none;
+    background-color: #434254;
+    border-radius: 6px;
+    padding: 0;
+    justify-content: center;
+}
+
+#corpo-usuario ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+#corpo-usuario li{
+    margin: 5px;
+}
+
+#corpo-usuario span{
+    background-color: #434254;
+    width: 18px;
+    height: 18px;
+    rotate: 45deg;
+    position: absolute;
+    right: 18%;
+    bottom: 90%;
+}
+
+#corpo-produto, #corpo-cadastro{
+    width: 100%;
+    height: 100%;
+}
+.corpo-principal{
+    position: relative;
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding: 15px;
+}
+.corpo-principal-cadastro{
+    background-color: white;
+    height: 80%;
+    width: 80%;
+}
+.cabecalho-produtos{
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.cabecalho-produtos label{
+    color: #434349;
+    font-weight: bold;
+    font-size: 20px;
+}
+.cabecalho-produtos input{
+    outline: none;
+    margin-left: 30px;
+    background-color: white;
+    height: 40px;
+    width: 266px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 7px 13px #F2ECFF;
+    padding-left: 30px;
+    font-size: 17px;
+}
+.cabecalho-produtos select{
+    padding-left: 30px;
+    margin-left: 30px;
+    outline: none;
+    border: none;
+    width: 185px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 7px 13px #F2ECFF;
+    position: relative;
+    right: -100%;
+}
+.entrada{
+    outline: none;
+    background-color: white;
+    height: 40px;
+    width: 266px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 7px 13px #F2ECFF;
+    padding-left: 30px;
+    font-size: 17px;
+}
+.entrada::placeholder{
+    opacity: 55%;
+}
+.elemento-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    margin-bottom: 45px;
+}
+.elemento-cadastro select{
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    width: 185px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 7px 13px #F2ECFF;
+}
+.bloco-elementos{
+    display: flex;
+    flex-direction: row;
+}
+.elemento-cadastro label{
+    font-family: 'Poppins', sans-serif;
+    opacity: 50%;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 15px;
+}
+#nome-produto{
+    width: 90% !important;
+    box-sizing: border-box;
+}
+.rodape{
+    margin-top: 20px;
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.elemento-controle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.btn-controle{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    box-shadow: 0 7px 13px #F2ECFF;
+    margin-left: 15px;
+    border: none;
+    width: 170px;
+    height: 40px;
+}
+.tabela-produtos{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+.tabela-produtos td{
+    color: #505470;
+    width: 160px;
+    height: 30px;
+    margin-left: 15px;
+    text-align: center;
+}
+.cabeca-tabela{
+    border-radius: 8px;
+    background-color: #EFF0F4;
+}
