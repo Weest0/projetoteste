@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Sistema</title>
+        <link rel="stylesheet" type="text/css" href="style/global-style.css">
+        <link rel="stylesheet" type="text/css" href="style/global-colors.css">
+    </head>
+    <body>
+        <header class="cabecalho cabecalho-color">
+            <div class="lado-direito">
+                <ul>
+                    <li><img src="images/logo-site.png"></li>
+                    <li class="letras-titulo li-cabecalho">Sistema de Estoque de Produtos | SEP</li>
+                </ul>
+            </div>
+            <div class="lado-esquerdo">
+                <ul>
+                    <li class="letras-nome-usuario">Olá, <label>Marcos</label></li>
+                    <button class="icone-usuario letras-usuario" id="icone-usuario">M</button>
+                </ul>
+            </div>
+            
+        </header>
+        <ul class="sub-cabecalho sub-cabecalho-color">
+            <button class="letras li-sub-cabecalho" id="cadastro">Cadastro</button>
+            <button class="letras li li-sub-cabecalho" id="produtos">Produtos Cadastrados</button>
+            <button class="letras li-sub-cabecalho" id="relatorios">Relatorios</button>
+        </ul>
+        <div id="corpo-cadastro">
+            <div class="corpo-principal">
+                <ul class="cabecalho-produtos">
+                    <li><label class="letras">CADASTRO</label></li>
+                </ul>
+                <span class="elemento-cadastro">
+                    <label for="nome-produto">Nome Produto</label>
+                    <input type="text" placeholder="Escultura" id="nome-produto" class="entrada">
+                </span>
+                <div class="bloco-elementos">
+                    <span class="elemento-cadastro">
+                        <label for="valor-produto">Valor</label>
+                        <input type="text" placeholder="100.00" id="valor-produto" class="entrada">
+                    </span>
+                    <span class="elemento-cadastro">
+                        <label for="quantidade-produto">Quantidade</label>
+                        <input type="text" placeholder="10" id="quantidade-produto" class="entrada">
+                    </span>
+                    <span class="elemento-cadastro">
+                        <label for="quantidade-produto">Codigo Produto</label>
+                        <input type="text" placeholder="00000" id="codigo" class="entrada">
+                    </span>
+                </div>
+                <div class="bloco-elementos">
+                    <span class="elemento-cadastro">
+                        <label for="categoria-produto">Categorias</label>
+                        <select id="categoria-produto">
+                            <option>Esculturas de Argila</option>
+                            <option>Ajulejos e Mosaicos</option>
+                            <option>Bonecos e Figuras</option>
+                            <option>Vazos e Jarros</option>
+                            <option>Objetos Decorativos</option>
+                            <option>Outro</option>
+                        </select>
+                    </span>
+                    <span class="elemento-cadastro">
+                        <label>Descrição</label>
+                        <input type="text" placeholder="Madeira, 1,5m de altura..." id="descricao" class="entrada">
+                    </span>
+                </div>
+                
+                <span class="elemento-controle">
+                    <button class="btn-controle" id="adicionar">Adicionar</button>
+                    <button class="btn-controle">Redefinir</button>
+                </span>
+            </div>
+        </div>
+        
+        <div id="corpo-produto">
+            <div class="corpo-principal">
+                <ul class="cabecalho-produtos">
+                    <li><label class="letras">PRODUTOS</label></li>
+                    <li><input type="text" placeholder="Pequisar..."></li>
+                    <li>
+                        <select>
+                            <option>Ordenar por</option>
+                            <option>XXXX</option>
+                            <option>XXXX</option>
+                            <option>XXXX</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="tabela-produtos">
+                    <table id="tabela-produtos">
+                        <tr class="cabeca-tabela">
+                            <td>Nome Produto</td>
+                            <td>Descrição Produto</td>
+                            <td>Categoria</td>
+                            <td>Codigo Produto</td>
+                            <td>Quantidade Produto</td>
+                            <td>Valor Produto</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="corpo-relatorio">Relatorios</div>
+        <div id="corpo-usuario">
+            <span></span>
+            <ul>
+                <li class="letras">Configurações</li>
+                <li class="letras">Sair</li>
+            </ul>
+        </div>
+
+        <footer class="rodape">
+
+        </footer>
+        <script type="text/javascript" src="script/principal.js"></script>
+    </body>
+</html>
